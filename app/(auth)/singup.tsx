@@ -5,6 +5,7 @@ import { useState } from "react";
 import CustomButton from "@/components/customButton";
 import { Link } from "expo-router";
 import "../../global.css";
+import OAuth from "@/components/OAuth";
 const Singup = () => {
   const [form, setForm] = useState({
     name: "",
@@ -50,7 +51,7 @@ const Singup = () => {
             onPress={onSingUpPress}
             className="mt-6"
           />
-          {/* OAUTH */}
+          <OAuth />
           <Link
             href="/singin"
             className="text-lg text-center text-general-200 mt-10"
